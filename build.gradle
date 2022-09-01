@@ -26,6 +26,7 @@ dependencies {
 	implementation 'org.liquibase:liquibase-core'
 	implementation 'org.projectlombok:lombok:1.18.20'
 	implementation 'com.auth0:java-jwt:3.8.2'
+	implementation 'org.springdoc:springdoc-openapi-ui:1.6.11'
 	runtimeOnly 'com.h2database:h2'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
