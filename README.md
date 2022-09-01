@@ -4,7 +4,7 @@
 
 - Descargar las dependencias del build.gradle.
 
-- La base de datos cuenta con liquibase para que se cree automaticamente, en el archivo db.changelog estan las sentencias para crear las tablas.
+- La base de datos cuenta con liquibase para que se cree automáticamente, en el archivo db.changelog estan las sentencias para crear las tablas.
 
 - El proyecto se despliega en el puerto 8081 como esta en el application.yml, tiene un context-path: /api.
 
@@ -53,7 +53,7 @@
 - La url de ingreso a la base de datos es la siguiente:
         http://localhost:8081/api/h2-console
 
--La url de ingreso a la documentacion swagger es la siguiente:
+-La url de ingreso a la documentación swagger es la siguiente:
         http://localhost:8081/api/swagger-ui/index.html
 
 
