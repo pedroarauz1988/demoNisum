@@ -124,8 +124,8 @@ public class UserServiceImpl implements UserService {
         if (userPresenter.getPassword() == null || userPresenter.getPassword().isEmpty() || userPresenter.getPassword().isBlank()) {
             throw new ValidationException("el usuario debe ingresar la contraseña");
         }
-        emailPattern = Pattern.compile(defaultConfigurationService.getDefaultConfigurationByName(DefaultConfigurationNames.DEFAULT_EMAIL_REGULAR_EXPRESSION.toString()).getValue());
-        passwordPattern = Pattern.compile(defaultConfigurationService.getDefaultConfigurationByName(DefaultConfigurationNames.DEFAULT_PASSWORD_REGULAR_EXPRESSION.toString()).getValue());
+        emailPattern = Pattern.compile(defaultConfigurationService.getDefaultConfigurationByName(DefaultConfigurationNames.DEFAULT_EMAIL_REGULAR_EXPRESSION.toString()).getPattern());
+        passwordPattern = Pattern.compile(defaultConfigurationService.getDefaultConfigurationByName(DefaultConfigurationNames.DEFAULT_PASSWORD_REGULAR_EXPRESSION.toString()).getPattern());
         if (!emailPattern.matcher(userPresenter.getEmail()).matches()) {
             throw new ValidationException("El email no cumple el patrón establecido: 'alguien@dominio.com'");
         }

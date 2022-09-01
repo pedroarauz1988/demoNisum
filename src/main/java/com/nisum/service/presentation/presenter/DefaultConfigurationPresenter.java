@@ -15,5 +15,5 @@ public class DefaultConfigurationPresenter {
 
     private UUID id;
     private String name;
-    private String value;
+    private String pattern;
 }

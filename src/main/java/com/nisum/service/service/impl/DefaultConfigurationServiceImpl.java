@@ -31,10 +31,10 @@ public class DefaultConfigurationServiceImpl implements DefaultConfigurationServ
         Optional<DefaultConfiguration> defaultConfigurationOptional = defaultConfigurationRepository.findByName(defaultConfigurationPresenter.getName());
         DefaultConfiguration defaultConfiguration = new DefaultConfiguration();
         if (defaultConfigurationOptional.isPresent()) {
-            defaultConfiguration.setValue(defaultConfigurationPresenter.getValue());
+            defaultConfiguration.setPattern(defaultConfigurationPresenter.getPattern());
         } else {
             defaultConfiguration.setName(defaultConfigurationPresenter.getName());
-            defaultConfiguration.setValue(defaultConfigurationPresenter.getValue());
+            defaultConfiguration.setPattern(defaultConfigurationPresenter.getPattern());
         }
         DefaultConfiguration defaultConfigurationSaved = defaultConfigurationRepository.save(defaultConfiguration);
         return defaultConfigurationSaved;

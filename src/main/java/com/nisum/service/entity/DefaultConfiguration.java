@@ -25,5 +25,5 @@ public class DefaultConfiguration {
     private String name;
 
     @NotNull
-    private String value;
+    private String pattern;
 }
