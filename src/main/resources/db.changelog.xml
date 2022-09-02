@@ -68,4 +68,13 @@
 
 
     </changeSet>
+    <changeSet author="pedro" id="0000-0000-0005">
+        <sql dbms="h2"
+             endDelimiter="\nGO"
+             stripComments="true">
+            INSERT INTO DEFAULT_CONFIGURATIONS (DEFAULT_CONFIGURATION_ID, NAME, PATTERN)  VALUES('9d1f2f65-ad08-4810-a855-3278ba3c1f95', 'DEFAULT_PASSWORD_REGULAR_EXPRESSION', '^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$');
+
+            INSERT INTO DEFAULT_CONFIGURATIONS (DEFAULT_CONFIGURATION_ID, NAME, PATTERN)  VALUES('dd73bef5-8b4b-4ced-b747-5829c51dec66', 'DEFAULT_EMAIL_REGULAR_EXPRESSION', '^[^@]+@[^@]+\.[a-zA-Z]{2,}$');
+        </sql>
+    </changeSet>
 </databaseChangeLog>
