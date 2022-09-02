@@ -53,10 +53,11 @@
 - La url de ingreso a la base de datos es la siguiente:
         http://localhost:8081/api/h2-console
 
--La url de ingreso a la documentación swagger es la siguiente:
+- La url de ingreso a la documentación swagger es la siguiente:
         http://localhost:8081/api/swagger-ui/index.html
 
-
+- El diagrama de la solución se encuentra en la ruta:
+        src\main\resources\diagrama\diagrama-solucion.png
 
 Hecho por Pedro Arauz
 Correo: pedro.arauz.88@gmail.com
