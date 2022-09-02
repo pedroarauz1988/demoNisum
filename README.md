@@ -14,7 +14,8 @@
   
    Para crear o actualizar las expresiones regulares del correo y clave:
 
-        http://localhost:8081/api/saveUpdatePattern
+        Petición POST:
+        http://localhost:8081/api/saveUpdatePattern   
 
         JSON de entrada para RequestBody:
         correo: 
@@ -32,7 +33,8 @@
         }
 
    Para crear o actualizar los usuarios:
-  
+
+        Petición POST:        
         http://localhost:8081/api/saveUpdateUser
   
         JSON de entrada para RequestBody:
